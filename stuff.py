@@ -1,3 +1,5 @@
+import os
+
 # lists
 # store sets of mixed data
 mylist = []
@@ -43,3 +45,10 @@ else:
 # get type of variable
 print("Mylist is of type {0}".format(type(mylist)))
 
+
+#functions
+def greet_user():
+    """ this greets the user """
+    print("hello {0}".format(os.getlogin()))
+
+greet_user()
